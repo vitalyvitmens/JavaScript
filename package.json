@@ -1,0 +1,30 @@
+{
+  "name": "java-script",
+  "version": "1.0.0",
+  "description": "JavaScript Course Sololearn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalyvitmens/JavaScript.git"
+  },
+  "keywords": [
+    "javascript",
+    "js"
+  ],
+  "author": "vitalyvitmens <vitalyvitmens@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalyvitmens/JavaScript/issues"
+  },
+  "homepage": "https://github.com/vitalyvitmens/JavaScript#readme",
+  "dependencies": {
+    "ansi-styles": "^6.2.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

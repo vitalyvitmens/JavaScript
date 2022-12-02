@@ -1,4 +1,4 @@
-const chalk = require("chalk");
-const text = require("./data");
+import chalk from "chalk";
+import text from "./data.js";
 
 console.log(chalk.blue(text));

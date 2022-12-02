@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 // fs.mkdir(path.join(__dirname, "test"), (err) => {
 //   if (err) {
@@ -9,7 +9,9 @@ const path = require("path");
 //   console.log("Папка создана");
 // });
 
-const filePath = path.join(__dirname, "test", "text.txt");
+// import filePath from path.join(__dirname, "test", "text.txt");
+
+const filePath = path.join("demo", "test", "text.txt");
 
 // fs.writeFile(filePath, "Hello NodeJS!", (err) => {
 //   if (err) {

@@ -1,4 +1,4 @@
 import chalk from "chalk";
-import text from "./data.js";
+import { text } from "./data.js";
 
 console.log(chalk.blue(text));

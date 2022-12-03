@@ -1,4 +1,3 @@
-import { TIMEOUT } from "dns";
 import EventEmitter from "events";
 
 // const emitter = new EventEmitter();

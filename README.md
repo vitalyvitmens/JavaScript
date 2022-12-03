@@ -55,3 +55,10 @@ Is this OK? (yes) y
 Остановить сервер, выполни команду в терминале: Ctrl + C
 
 Для запуска в хром используй адрес: http://localhost:3000/
+
+Для автообновления страницы сервера при нажатии Ctrl + S добавь в файл packageg.json два скрипта start и dev:
+"scripts": {
+"start": "node index2.js",
+"dev": "nodemon index2.js"
+},
+и после этого в терминале выполни команду: npm run dev

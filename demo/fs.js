@@ -1,5 +1,10 @@
 import fs from "fs";
-import path from "path";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const filePath = path.join(__dirname, "test", "text.txt");
 
 // fs.mkdir(path.join(__dirname, "test"), (err) => {
 //   if (err) {
@@ -8,10 +13,6 @@ import path from "path";
 
 //   console.log("Папка создана");
 // });
-
-// import filePath from path.join(__dirname, "test", "text.txt");
-
-const filePath = path.join("demo", "test", "text.txt");
 
 // fs.writeFile(filePath, "Hello NodeJS!", (err) => {
 //   if (err) {
@@ -35,7 +36,7 @@ fs.readFile(filePath, "utf-8", (err, content) => {
   }
   console.log(content);
 
-  //   const data = Buffer.from(content);
-  //   console.log("Content:", content);
-  //   console.log("Content:", data.toString());
+  const data = Buffer.from(content);
+  console.log("Content:\n", content);
+  console.log("Content:\n", data.toString());
 });

@@ -12,7 +12,8 @@
 что бы убедится в установке npm (node package manager) и посмотреть версию
 далее в терминале проиниацилизируй проект, выполнив команду: npm init
 ответив на вопросы создадим файл package.json:
-Press ^C at any time to quit.
+
+<!-- Press ^C at any time to quit.
 package name: (sololearn-javascript) sololearn-javascript
 version: (1.0.0)
 description: Sololearn JavaScript course
@@ -41,7 +42,7 @@ About to write to C:\Users\vitaly\Visual Studio Code Projects\sololearn-javascri
 "license": "ISC"
 }
 
-Is this OK? (yes) y
+Is this OK? (yes) y -->
 
 <!-- TODO: после строки:  "main": "index.js", -->
 <!-- TODO: добавь строку: "type": "module", -->

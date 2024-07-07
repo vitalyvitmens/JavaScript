@@ -40,7 +40,28 @@ function containsResult(draws, result) {
   })
 }
 
-const newResult = [10, 25, 31, 32, 42, 49]
+const newResult = [36, 4, 11, 45, 20, 29]
 const isPresent = containsResult(results, newResult)
 
 console.log(`Встречалась ли ставка ${newResult} ранее в розыгрыше:`, isPresent) // Выведет true или falseы
+
+// Функция для подсчета частоты каждого числа в массиве результатов
+function countNumbersFrequency(results) {
+  const frequency2 = {}
+
+  // Подсчет частоты каждого числа
+  results.flat().forEach((number) => {
+    frequency2[number] = (frequency2[number] || 0) + 1
+  })
+
+  // Создание массива из объектов и сортировка по убыванию частоты
+  const sortedFrequency = Object.keys(frequency2)
+    .map((key) => ({ number: key, count: frequency2[key] }))
+    .sort((a, b) => b.count - a.count)
+
+  return sortedFrequency
+}
+
+// Пример использования функции
+const numberFrequency = countNumbersFrequency(results)
+console.log(numberFrequency)

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node loto.js",
-    "dev": "nodemon index2.js"
+    "dev": "nodemon task.js"
   },
   "repository": {
     "type": "git",

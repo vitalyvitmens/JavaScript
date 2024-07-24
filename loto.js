@@ -40,10 +40,16 @@ function containsResult(draws, result) {
   })
 }
 
-const newResult = [36, 5, 45, 13, 21, 29]
+const newResult = [10, 14, 17, 20, 29, 40]
 const isPresent = containsResult(results, newResult)
+console.log(`Встречалась ли ставка ${newResult} ранее в розыгрыше:`, isPresent) // Выведет true или false
 
-console.log(`Встречалась ли ставка ${newResult} ранее в розыгрыше:`, isPresent) // Выведет true или falseы
+const newResult2 = [4, 37, 11, 45, 20, 28]
+const isPresent2 = containsResult(results, newResult2)
+console.log(
+  `Встречалась ли ставка ${newResult2} ранее в розыгрыше:`,
+  isPresent2
+) // Выведет true или false
 
 // Функция для подсчета частоты каждого числа в массиве результатов
 function countNumbersFrequency(results) {

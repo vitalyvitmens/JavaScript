@@ -40,11 +40,11 @@ function containsResult(draws, result) {
   })
 }
 
-const newResult = [10, 14, 17, 20, 29, 40]
+const newResult = [4, 12, 21, 29, 37, 45]
 const isPresent = containsResult(results, newResult)
 console.log(`Встречалась ли ставка ${newResult} ранее в розыгрыше:`, isPresent) // Выведет true или false
 
-const newResult2 = [4, 37, 11, 45, 20, 28]
+const newResult2 = [29, 4, 44, 27, 12, 39]
 const isPresent2 = containsResult(results, newResult2)
 console.log(
   `Встречалась ли ставка ${newResult2} ранее в розыгрыше:`,

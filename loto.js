@@ -40,15 +40,22 @@ function containsResult(draws, result) {
   })
 }
 
-const newResult = [4, 12, 21, 29, 37, 45]
+const newResult = [12, 25, 33, 47, 3, 6]
 const isPresent = containsResult(results, newResult)
 console.log(`Встречалась ли ставка ${newResult} ранее в розыгрыше:`, isPresent) // Выведет true или false
 
-const newResult2 = [29, 4, 44, 27, 12, 39]
+const newResult2 = [47, 3, 6, 25, 33, 10]
 const isPresent2 = containsResult(results, newResult2)
 console.log(
   `Встречалась ли ставка ${newResult2} ранее в розыгрыше:`,
   isPresent2
+) // Выведет true или false
+
+const newResult3 = [47, 33, 3, 6, 11, 20]
+const isPresent3 = containsResult(results, newResult3)
+console.log(
+  `Встречалась ли ставка ${newResult3} ранее в розыгрыше:`,
+  isPresent3
 ) // Выведет true или false
 
 // Функция для подсчета частоты каждого числа в массиве результатов
@@ -247,3 +254,12 @@ function selectNumbersForBetFromTriplets(topTriplets) {
 // Пример использования функции
 const numbersForBet2 = selectNumbersForBetFromTriplets(topTriplets)
 console.log('Выбранные числа для ставки:', numbersForBet2.join(', '))
+
+// Получаем последние 17 тиражей
+const last17Draws = results.slice(-12); // 17 14 12
+
+// Вычисляем частоту и получаем "горячие" числа
+const frequency2 = countFrequency(last17Draws);
+const hotNumbers2 = getMostFrequentNumbers(frequency2);
+
+console.log('Наиболее вероятные числа для следующего розыгрыша:', hotNumbers2);

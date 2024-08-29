@@ -51,7 +51,7 @@ console.log(
   isPresent2
 ) // Выведет true или false
 
-const newResult3 = [47, 33, 3, 6, 11, 20]
+const newResult3 = [4, 36, 12, 45, 21, 28]
 const isPresent3 = containsResult(results, newResult3)
 console.log(
   `Встречалась ли ставка ${newResult3} ранее в розыгрыше:`,
